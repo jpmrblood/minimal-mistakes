@@ -94,6 +94,7 @@ wsrep_cluster_name="apakek_cluster"
 wsrep_cluster_address=gcomm://192.168.101.10,192.168.101.11,192.168.101.12
 wsrep_sst_method=rsync
 ~~~
+
 You can creatively change the name `galera.cnf` into `galerbiji.cnf` or any name that
 your brain could summon.
 
@@ -110,7 +111,7 @@ $ sudo /usr/bin/galera_new_cluster
 sudo service mysql start --wsrep-new-cluster
 ~~~
 
-***
+## Final check
 To check how many node run on the cluster.
 ~~~console
 $ sudo mysql --defaults-file=/etc/mysql/debian.cnf -e 'SELECT VARIABLE_VALUE as "cluster size" FROM INFORMATION_SCHEMA.GLOBAL_STATUS WHERE VARIABLE_NAME="wsrep_cluster_size"'
@@ -120,7 +121,7 @@ $ sudo mysql --defaults-file=/etc/mysql/debian.cnf -e 'SELECT VARIABLE_VALUE as 
 | 1            |
 +--------------+
 ~~~
-***
+
 ## MariaDB2, MariaDB3
 The rest of the nodes.
 
@@ -134,7 +135,8 @@ $ sudo systemctl start mysql
 $ sudo service mysql start
 ~~~
 
----
+
+## Final check
 
 Final check how many node run on the cluster.
 ~~~console
@@ -145,8 +147,6 @@ $ sudo mysql --defaults-file=/etc/mysql/debian.cnf -e 'SELECT VARIABLE_VALUE as 
 | 3            |
 +--------------+
 ~~~
-
----
 
 ## Excercise
 
