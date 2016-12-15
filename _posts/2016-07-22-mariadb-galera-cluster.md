@@ -133,7 +133,9 @@ $ sudo systemctl start mysql
 ~~~console
 $ sudo service mysql start
 ~~~
+
 ---
+
 Final check how many node run on the cluster.
 ~~~console
 $ sudo mysql --defaults-file=/etc/mysql/debian.cnf -e 'SELECT VARIABLE_VALUE as "cluster size" FROM INFORMATION_SCHEMA.GLOBAL_STATUS WHERE VARIABLE_NAME="wsrep_cluster_size"'
@@ -143,6 +145,7 @@ $ sudo mysql --defaults-file=/etc/mysql/debian.cnf -e 'SELECT VARIABLE_VALUE as 
 | 3            |
 +--------------+
 ~~~
+
 ---
 
 ## Excercise
@@ -157,7 +160,7 @@ Create a user for HAProxy. This user is used to ping check health status.
 $ sudo mysql --defaults-file=/etc/mysql/debian.cnf -e "CREATE USER 'haproxy'@'192.168.101.1'"
 ~~~
 
-Append these lines in `/etc/haproxy/haproxy.cfg`
+Append these lines in `/etc/haproxy/haproxy.cfg` file.
 ~~~config
 # Load Balancing for Galera Cluster
 listen galera 192.168.1.12:3306
