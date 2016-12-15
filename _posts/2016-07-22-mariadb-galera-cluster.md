@@ -110,7 +110,8 @@ sudo /usr/bin/galera_new_cluster
 sudo service mysql start --wsrep-new-cluster
 ~~~
 
-> To check how many node run on the cluster.
+***
+To check how many node run on the cluster.
 ~~~console
 $ sudo mysql --defaults-file=/etc/mysql/debian.cnf -e 'SELECT VARIABLE_VALUE as "cluster size" FROM INFORMATION_SCHEMA.GLOBAL_STATUS WHERE VARIABLE_NAME="wsrep_cluster_size"'
 +--------------+
@@ -119,7 +120,7 @@ $ sudo mysql --defaults-file=/etc/mysql/debian.cnf -e 'SELECT VARIABLE_VALUE as 
 | 1            |
 +--------------+
 ~~~
-
+***
 ## MariaDB2, MariaDB3
 The rest of the nodes.
 
