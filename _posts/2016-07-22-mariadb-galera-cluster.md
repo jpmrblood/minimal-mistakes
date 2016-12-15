@@ -12,7 +12,7 @@ categories:
  - review
 ---
 
-![HA Proxy encapsulate a Galera cluster for High-Availability solution.](/assets/haproxy-galera-1.png)
+![HA Proxy encapsulate a Galera cluster for High-Availability solution.](/assets/haproxy-galera-1.png){: .align-center}
 
 ### Configuration
 
