@@ -1,5 +1,6 @@
 ---
 title: Install GNU/Linux
+header: /assets/willy-broken-the-windows.png
 tags:
   - linux
   - ubuntu
