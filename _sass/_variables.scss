@@ -64,10 +64,16 @@ $blue:      #268bd2;
 $cyan:      #2aa198;
 $green:     #859900;
 
+$gray                       : $base01 !default;
+$dark-gray                  : $base02 !default;
+$darker-gray                : $base03 !default;
+$light-gray                 : $base00 !default;
+$lighter-gray               : $base0 !default;
+
 $body-color                 : $base03 !default;
 $background-color           : $base03 !default;
-$code-background-color      : $base01 !default;
-$code-background-color-dark : $base02 !default;
+$code-background-color      : $base02 !default;
+$code-background-color-dark : $base03 !default;
 $text-color                 : $base0 !default;
 $border-color               : $base1 !default;
 
