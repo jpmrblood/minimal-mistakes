@@ -81,7 +81,7 @@ author:
   avatar           : "/images/bio-photo.jpg"
   bio              : "There is nothing is certain but the uncertainty itself. We document for learning from the experience. Welcome!"
   location         : "Planet Earth"
-  email            : 
+  email            :
   uri              :
   bitbucket        :
   codepen          :
@@ -90,7 +90,7 @@ author:
   facebook         : jpmrblood
   foursquare       :
   github           : jpmrblood
-  google_plus      : 
+  google_plus      :
   keybase          :
   instagram        : jpmrblood
   lastfm           : jpmrblood
@@ -237,6 +237,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
