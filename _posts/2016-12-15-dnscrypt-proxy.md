@@ -9,7 +9,7 @@ categories:
 header:
   overlay_image: /assets/2016/12/dns-crypt.png
 ---
-Millions of Xerces' invading army were mostly defeated in the sea by the _democratic_ city state Athens,
+Millions of Xerces' invading armies were mostly defeated on the sea by the _democratic_ city state Athens,
 and not by the mythical 300 Spartans!
 
 # Installing `dnscrypt-proxy`
