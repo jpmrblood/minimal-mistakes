@@ -102,7 +102,7 @@ For simplicity, lets assume we want to make MariaDB1 as the first master.
 
 ### Debian with `systemd` (e.g. Jessie)
 ~~~console
-sudo /usr/bin/galera_new_cluster
+$ sudo /usr/bin/galera_new_cluster
 ~~~
 
 ### Debian with other sysinit
@@ -126,15 +126,15 @@ The rest of the nodes.
 
 ### Debian with `systemd` (e.g. Jessie)
 ~~~console
-sudo systemctl start mysql
+$ sudo systemctl start mysql
 ~~~
 
 ### Debian with other sysinit
 ~~~console
-sudo service mysql start
+$ sudo service mysql start
 ~~~
-
-> Final check how many node run on the cluster.
+---
+Final check how many node run on the cluster.
 ~~~console
 $ sudo mysql --defaults-file=/etc/mysql/debian.cnf -e 'SELECT VARIABLE_VALUE as "cluster size" FROM INFORMATION_SCHEMA.GLOBAL_STATUS WHERE VARIABLE_NAME="wsrep_cluster_size"'
 +--------------+
@@ -143,6 +143,7 @@ $ sudo mysql --defaults-file=/etc/mysql/debian.cnf -e 'SELECT VARIABLE_VALUE as 
 | 3            |
 +--------------+
 ~~~
+---
 
 ## Excercise
 
@@ -153,7 +154,7 @@ to the reader.
 
 Create a user for HAProxy. This user is used to ping check health status.
 ~~~console
-sudo mysql --defaults-file=/etc/mysql/debian.cnf -e "CREATE USER 'haproxy'@'192.168.101.1'"
+$ sudo mysql --defaults-file=/etc/mysql/debian.cnf -e "CREATE USER 'haproxy'@'192.168.101.1'"
 ~~~
 
 Append these lines in `/etc/haproxy/haproxy.cfg`
@@ -171,7 +172,7 @@ listen galera 192.168.1.12:3306
 
 Restart HAProxy.
 ~~~console
-sudo service haproxy restart
+$ sudo service haproxy restart
 ~~~
 
 Done.
