@@ -1,20 +1,22 @@
 ---
-layout: single
 title: ZoL GIT on Xenial
-categories:
-- zfs
-- linux
-- ubuntu
 tags:
 - linux
 - zfs
 - ubuntu
 - xenial
 - git
+categories:
+- zfs
+- linux
+- ubuntu
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/ZoL.png
 ---
 
-Ubuntu Xenial included ZFS by default. But for those that adventureous and seeking new features,
-use a ZFS on Linux (ZoL) fresh from GIT.
+Ubuntu Xenial included ZFS by default. But for those that adventureous and seeking new features, use a ZFS on Linux (ZoL) fresh from GIT.
 
 # Removing the old
 

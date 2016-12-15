@@ -1,5 +1,4 @@
 ---
-layout: single
 title: ViM on sources.list
 tags:
   - vim

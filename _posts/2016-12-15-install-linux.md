@@ -1,6 +1,9 @@
 ---
 title: Install GNU/Linux
-header: /assets/willy-broken-the-windows.png
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/willy-broken-the-windows.png
 tags:
   - linux
   - ubuntu
