@@ -1,8 +1,6 @@
 ---
 layout: single
 title: ZoL GIT on Xenial
-header:
-  image: /assets/ZoL.png
 categories:
 - zfs
 - linux
