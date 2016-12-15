@@ -13,8 +13,8 @@ name                     : "Jan Peter Alexander Rajagukguk"
 description              : "Capturing tacit knowledge of JP"
 url                      : #"https://jpmrblood.github.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/images/default-post.jpg"
+repository               : jpmrblood/jpmrbood.github.io
+teaser                   : "/images/hero-header.jpg"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -240,3 +240,5 @@ defaults:
       comments: false
       share: true
       related: true
+      header:
+        overlay_image: /images/hero-header.jpg
