@@ -6,6 +6,8 @@ tags:
   - regex
 categories:
   - tips
+header:
+  overlay_image: /assets/2016/12/vim.png
 ---
 
 Changing all default repo URLs to KAMBING.ui.ac.id:
