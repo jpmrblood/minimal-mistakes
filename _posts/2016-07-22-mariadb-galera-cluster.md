@@ -161,7 +161,7 @@ $ sudo mysql --defaults-file=/etc/mysql/debian.cnf -e "CREATE USER 'haproxy'@'19
 ~~~
 
 Append these lines in `/etc/haproxy/haproxy.cfg` file.
-~~~config
+~~~
 # Load Balancing for Galera Cluster
 listen galera 192.168.1.12:3306
      balance source
