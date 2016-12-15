@@ -14,7 +14,7 @@ description              : "Experimental blog of JP"
 url                      : #"https://jpmrblood.github.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "images/default-post.jpg"
+teaser                   : "/images/default-post.jpg"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
