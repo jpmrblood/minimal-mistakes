@@ -1,6 +1,8 @@
 ---
 layout: single
 title: ZoL GIT on Xenial
+header:
+  image: /assets/ZoL.png
 categories:
 - zfs
 - linux
@@ -13,7 +15,7 @@ tags:
 - git
 ---
 
-Ubuntu Xenial included ZFS by default. But for those that adventureous and seeking new features, 
+Ubuntu Xenial included ZFS by default. But for those that adventureous and seeking new features,
 use a ZFS on Linux (ZoL) fresh from GIT.
 
 # Removing the old
@@ -35,7 +37,7 @@ Remove the old from default kernel:
 rm -rf /lib/modules/$(uname -r)/kernel/zfs/
 ```
 
-# Dependencies 
+# Dependencies
 
 ```console
 apt -y install build-essential autoconf libtool gawk alien fakeroot linux-headers-$(uname -r)
@@ -44,7 +46,7 @@ apt -y install parted lsscsi ksh
 apt -y install autoconf git libdevmapper-dev
 ```
 
-# ZFS 
+# ZFS
 
 We just want the _kernel_ because the userspace tool from Ubuntu is sufficient for now.
 
