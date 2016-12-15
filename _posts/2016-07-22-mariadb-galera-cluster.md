@@ -217,7 +217,7 @@ There are things that can be done to optimize:
 * [HAProxy — Galera Cluster Documentation](http://galeracluster.com/documentation-webpages/haproxy.html)
 * [Node Failure and Recovery — Galera Cluster Documentation](http://galeracluster.com/documentation-webpages/recovery.html)
 * [Starting the Cluster — Galera Cluster Documentation](http://galeracluster.com/documentation-webpages/startingcluster.html)
-* [How to Deploy Galera Cluster for MySQL using Docker Containers | Severalnines](http://severalnines.com/blog/how-deploy-galera-cluster-mysql-using-docker-containers)
+* [How to Deploy Galera Cluster for MySQL using Docker Containers :: Severalnines](http://severalnines.com/blog/how-deploy-galera-cluster-mysql-using-docker-containers)
 * [MariaDB 10.1 Galera Cluster on Debian 8 Jessie - Sprinternet Blog](https://blog.sprinternet.at/2016/03/mariadb-10-1-galera-cluster-on-debian-8-jessie/)
 * [MySQL :: MySQL 5.5 Reference Manual :: 6.3.2 Adding User Accounts](https://dev.mysql.com/doc/refman/5.5/en/adding-users.html)
 * [Planet MySQL - Archives - The Galera installation guide for dummies.](https://planet.mysql.com/entry/?id=282416)
