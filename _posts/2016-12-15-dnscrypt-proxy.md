@@ -7,6 +7,8 @@ tags:
 categories:
   - tips
 header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
   overlay_image: /assets/2016/12/dns-crypt.png
 ---
 Millions of Xerces' invading armies were mostly defeated on the sea by the _democratic_ city state Athens,
