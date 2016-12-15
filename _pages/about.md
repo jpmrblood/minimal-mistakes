@@ -2,7 +2,7 @@
 layout: splash
 title: About Me
 header:
-  image: /images/about-me.jpg
+  overlay_image: /images/about-me.jpg
 permalink: /about/
 ---
 
