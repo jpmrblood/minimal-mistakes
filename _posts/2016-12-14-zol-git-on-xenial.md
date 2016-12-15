@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: splash
 title: ZoL GIT on Xenial
 header:
   image: /assets/ZoL.png
