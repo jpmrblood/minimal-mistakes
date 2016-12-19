@@ -27,6 +27,8 @@ $ sudo apt-get update
 $ sudo apt-get remove --purge libtxc-dxtn-s2tc0
 $ wget https://launchpad.net/~xorg-edgers/+archive/ubuntu/ppa/+files/libtxc-dxtn0_1.0.1-0.3ubuntu0sarvatt+raring_amd64.deb
 $ wget https://launchpad.net/~xorg-edgers/+archive/ubuntu/ppa/+files/libtxc-dxtn0_1.0.1-0.3ubuntu0sarvatt+raring_i386.deb
+$ sudo dpkg -i *.deb
+$ sudo apt-get -f install
 ```
 
 # Install Steam
