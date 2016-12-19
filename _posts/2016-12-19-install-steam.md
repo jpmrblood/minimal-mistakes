@@ -1,5 +1,5 @@
 ---
-title:  Install Steam
+title: Install Steam
 tags:
   - ubuntu
   - steam
