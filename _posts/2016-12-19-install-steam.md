@@ -21,7 +21,7 @@ $ sudo dpkg --add-architecture i386
 $ sudo apt-get update
 ```
 
-# F* The Software Patent! (Not In My Country)
+# F The Software Patent (Not In My Country)
 
 ```console
 $ sudo apt-get remove --purge libtxc-dxtn-s2tc0
