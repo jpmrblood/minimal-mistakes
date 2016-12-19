@@ -4,12 +4,13 @@ tags:
   - ubuntu
   - steam
   - linux
-categories
+categories:
   - tips
-  header:
-    overlay_color: "#000"
-    overlay_filter: "0.5"
-    overlay_image: /assets/2016/12/steam.jpg
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/2016/12/steam.jpg
+excerpt: "Instaling Steam with better gaming experience."
 ---
 Installing Steam with better gaming experience.
 
