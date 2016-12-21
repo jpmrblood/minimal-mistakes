@@ -72,37 +72,14 @@ $ sudo apt-get install openjdk-8-jdk
 # Install OCFPCSC
 
 Download OCF library from [OpenSCDP site](http://www.openscdp.org/ocf/download.html).
-```console
-
-The Makefile is not complete, here's my Makefile:
-
-```ini
-CC        = g++
-LD        = ld -export-dynamic
-OBJS     := $(patsubst %.cpp,%.o,$(wildcard *.cpp))
-JDK_HOME  = /usr/lib/jvm/java-8-openjdk-amd64/
-PCSC_HDRS = -I/usr/include/PCSC
-#PCSC_LIBS = -L/usr/local/pcsc/lib -lpcsclite
-PCSC_LIBS = -lpcsclite
-INCLUDE   = -I$(JDK_HOME)/include -I$(JDK_HOME)/include/linux $(PCSC_HDRS)
-LIBNAME   = libOCFPCSC1.so
-
-all: $(LIBNAME)
-
-clean:
-        rm -f *.so *.o
-
-install:
-        cp -f *.so /usr/lib
-
-$(LIBNAME): $(OBJS)
-        $(LD) -fPIC -Bsymbolic -shared $(OBJS) $(PCSC_LIBS) -lc -o $@
-
-$(patsubst %.cpp,%.o,$(wildcard *.cpp)) : %.o : %.cpp
-        $(CC) $(CFLAGS) -fPIC -c $< $(INCLUDE) $(DEFS)
-
-```
 
 ```console
-
+$ wget http://www.openscdp.org/ocf/ocf-1.3.1916.zip
+$ unzip ocf-1.3.1916.zip
+$ cd ocf/jni/ocfpcsc
+$ make JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+$ sudo cp libOCFPCSC1.so /usr/lib/libOCFPCSC1.so
 ```
+
+
+Done. Now java app can access card.
