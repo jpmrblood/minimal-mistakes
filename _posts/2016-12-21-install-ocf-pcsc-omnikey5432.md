@@ -9,6 +9,10 @@ categories:
   - linux
   - driver
   - tips
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/2016/12/smartcard.png
 excerpt: For those who do smart cards, we can use PCSCLite library. With Omnikey 5321 as reader, here's how we do it.
 ---
 
