@@ -1,5 +1,5 @@
 ---
-title: Let's Encrypt in Debian
+title: Change Default Launcher in Android Studio
 tags:
   - Android
   - Studio
@@ -12,7 +12,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/Untitled-510x336.jpg
-excerpt: How to change default launcher icon in Android Studio
+excerpt: The title explains all.
 ---
 Here are my steps for the task:
 
