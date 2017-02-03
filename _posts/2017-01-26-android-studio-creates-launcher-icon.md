@@ -11,7 +11,7 @@ categories:
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/Untitled-510x336.jpg
+  overlay_image: /assets/2017/02/android-recharged.png
 excerpt: The title explains all.
 ---
 Here are my steps for the task:
