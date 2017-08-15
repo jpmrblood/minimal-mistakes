@@ -20,7 +20,7 @@ $ cd sagit_global_images_7.8.10_20170810.0000.00_7.1_global
 Install without wiping storage. The drawback using this script is that the theme is not gonna get installed.
 It's alright. Dozen of people already extract the three MIUI 9 theme MTZs.
 ```
-$ $ sudo bash flash_all_except_storage.sh
+$ sudo bash flash_all_except_storage.sh
 [sudo] password for jp:
 product: sagit
 erasing 'boot'...
