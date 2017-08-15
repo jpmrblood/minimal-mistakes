@@ -279,7 +279,7 @@ Rename the script to disable:
 # adb shell mv /system/bin/install-recovery.sh /system/bin/install-recovery.sh.bak
 ```
 
-# Install TWRP
+# Install Magisk-v13.5 beta
 The beta version is the latest version as I wrote this and it passes Google's Safety Net check.
 
 ```
