@@ -280,6 +280,7 @@ Rename the script to disable:
 ```
 
 # Install TWRP
+The beta version is the latest version as I wrote this and it passes Google's Safety Net check.
 
 ```
 $ adb push Magisk-v13.5\(1350\).zip /sdcard
