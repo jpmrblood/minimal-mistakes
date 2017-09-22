@@ -1,5 +1,5 @@
 ---
-title: Remove First Line Injection
+title: Run GC From Commandline
 tags:
   - java
   - tomcat
