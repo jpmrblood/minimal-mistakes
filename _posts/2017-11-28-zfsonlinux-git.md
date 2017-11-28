@@ -13,7 +13,8 @@ excerpt: For every ZoL git pull, add ./autogen.sh
 ---
 
 ```
- export LINUX_VERSION=/usr/src/linux-headers-4.14.1+
+ export LINUX_VERSION=4.10.0-41-generic
+ export LINUX_PATH=/usr/src/linux-headers-$LINUX_VERSION
 ```
 
 # SPL
@@ -27,7 +28,7 @@ git pull
 
 ./autogen.sh
 
-./configure --prefix=/usr --disable-static --with-gnu-ld --with-linux=$LINUX_VERSION --with-linux-obj=$LINUX_VERSION --libexecdir=/usr/lib/zfs-linux --bindir=/bin --sbindir=/sbin --localstatedir=/var --runstatedir=/run --sysconfdir=/etc --with-config=kernel
+./configure --prefix=/usr --disable-static --with-gnu-ld --with-linux=$LINUX_PATH --with-linux-obj=$LINUX_PATH --libexecdir=/usr/lib/zfs-linux --bindir=/bin --sbindir=/sbin --localstatedir=/var --runstatedir=/run --sysconfdir=/etc --with-config=kernel
 
 make -j$(nproc)
 
@@ -46,7 +47,7 @@ git pull
 
 ./autogen.sh
 
-./configure --prefix=/usr --disable-static --with-gnu-ld --with-linux=$LINUX_VERSION --with-linux-obj=$LINUX_VERSION --libexecdir=/usr/lib/zfs-linux --bindir=/bin --sbindir=/sbin --localstatedir=/var --runstatedir=/run --sysconfdir=/etc --with-config=kernel
+./configure --prefix=/usr --disable-static --with-gnu-ld --with-linux=$LINUX_PATH --with-linux-obj=$LINUX_PATH --libexecdir=/usr/lib/zfs-linux --bindir=/bin --sbindir=/sbin --localstatedir=/var --runstatedir=/run --sysconfdir=/etc --with-config=kernel
 
 make -j$(nproc)
 
