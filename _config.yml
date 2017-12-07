@@ -74,6 +74,13 @@ analytics:
   google:
     tracking_id          :
 
+# tipuesearch
+tipue_search:
+  include:
+    pages: true
+  exclude:
+    files: [search.html]
+
 
 # Site Author
 author:
