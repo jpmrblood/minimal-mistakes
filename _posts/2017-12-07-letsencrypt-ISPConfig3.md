@@ -15,7 +15,7 @@ header:
   overlay_image: /assets/2017/01/http-cors.png
 excerpt: How to get Let's Encrypt SSL in ISPConfig3
 ---
-It's actually not that difficult.
+It's actually not that difficult. ISPConfig3 already sets the option there. We just need to provide all the necessary tools.
 
 # Getting certbot
 
