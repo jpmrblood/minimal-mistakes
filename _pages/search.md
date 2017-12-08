@@ -1,9 +1,9 @@
 ---
 layout: splash
-title: About Me
+title: Search
 header:
   overlay_image: /images/about-me.jpg
-permalink: /about/
+permalink: /search/
 ---
 <!-- Html Elements for Search -->
 <div id="search-container">
