@@ -12,14 +12,14 @@ header:
 excerpt: For every ZoL git pull, add ./autogen.sh
 ---
 
-```
+```bash
  export LINUX_VERSION=4.10.0-41-generic
  export LINUX_PATH=/usr/src/linux-headers-$LINUX_VERSION
 ```
 
 # SPL
 
-```
+```bash
 cd spl
 
 make clean
@@ -34,11 +34,11 @@ make -j$(nproc)
 
 sudo make install
 
- ```
+```
 
 # ZFS
 
-```
+```bash
 cd ../zfs
 
 make clean
