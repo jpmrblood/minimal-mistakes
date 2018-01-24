@@ -36,6 +36,7 @@ To compile:
 ```bash
 git clone git://git.savannah.gnu.org/grub.git
 cd grub
+./autgen.sh
 ./configure --prefix=/usr --sbindir=/sbin --sysconfdir=/etc --with-platform=efi
 make -j$(nproc)
 sudo make install
