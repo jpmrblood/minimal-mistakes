@@ -12,7 +12,7 @@ header:
   overlay_image: /assets/the-most-terrifying.png
 excerpt: Install latest PIP.
 ---
-There are ways install latest PIP in Python3 there are ways.
+There are ways to install latest PIP in Python3.
 
 # Bootstrap
 
