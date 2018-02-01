@@ -1,5 +1,5 @@
 ---
-title: Install Kubernetes on My PC
+title: Adding multiple lines with sudo
 tags:
   - shell
   - sudo
