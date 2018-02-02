@@ -36,3 +36,7 @@ SimpleJekyllSearch({
 })
 </script>
 ```
+
+Note:
+
+Actually, it was described on the original [Simple Jekyll Search page](https://github.com/christian-fei/Simple-Jekyll-Search). LOL!
