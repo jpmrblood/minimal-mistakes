@@ -12,9 +12,12 @@ header:
   overlay_image: /assets/the-most-terrifying.png
 excerpt: Add Jekyll search
 ---
-Add this to any page. I want in the front page. So, I add this to `_layouts/home.html`
+Add this to any page with search functionality. I want this in the front page of my site.
+So, I add the code to `_layouts/home.html`
 
-```bash
+# Search code
+
+```html
 <!-- Html Elements for Search -->
 <div id="search-container">
 <input type="text" id="search-input" placeholder="search..." />
