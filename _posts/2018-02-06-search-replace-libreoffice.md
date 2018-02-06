@@ -1,8 +1,9 @@
 ---
 title: Search and Replace Trailing Space in Libreoffice
 tags:
-  - jekyll
+  - libreoffice
   - search
+  - replace
   - function
 categories:
   - notes
