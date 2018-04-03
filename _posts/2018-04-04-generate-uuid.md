@@ -1,5 +1,5 @@
 ---
-title: VirtualBox After Clone
+title: Generating UUID
 tags:
   - uuid
   - python
