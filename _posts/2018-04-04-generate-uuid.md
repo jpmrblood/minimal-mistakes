@@ -25,6 +25,7 @@ Directly from kernel
 UUID=$(cat /proc/sys/kernel/random/uuid)
 ```
 
+
 # From Python
 
 Creating version 4 UUID. (Change 4 to 1 if you want version 1)

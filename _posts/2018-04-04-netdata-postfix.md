@@ -13,7 +13,7 @@ header:
 excerpt: Netdata postfix local alarm
 ---
 
-`/etc/netdata/health.d/postfix.conf`:
+`/etc/netdata/health.d/postfix.conf:`
 
 ```
 template: postfix_local_queue
@@ -27,4 +27,5 @@ template: postfix_local_queue
 ```
 
 Source:
-https://github.com/firehol/netdata/issues/2567
+
+<https://github.com/firehol/netdata/issues/2567>
