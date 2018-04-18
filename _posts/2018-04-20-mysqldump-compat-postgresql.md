@@ -1,5 +1,5 @@
 ---
-title: Mockup from repl.it
+title: myslqdump compatible with PostgreSQL
 tags:
   - mysql
   - mysqldump
