@@ -29,3 +29,9 @@ echo "deb http://ppa.launchpad.net/linuxuprising/java/ubuntu xenial main " | sud
 sudo apt update
 sudo apt install oracle-java10-installer
 ```
+
+
+Reference:
+
+[“Linux Uprising” team Oracle Java](https://launchpad.net/~linuxuprising/+archive/ubuntu/java)
+[Option 1: Easy Installation (PPA)](https://stackoverflow.com/a/49507161)
