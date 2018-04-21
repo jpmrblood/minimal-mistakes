@@ -5,7 +5,7 @@ tags:
   - jdk
   - pem
   - keystore
-  -pkcs12
+  - pkcs12
 categories:
   - notes
 header:
