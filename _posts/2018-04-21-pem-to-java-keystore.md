@@ -23,7 +23,7 @@ BUT NOT JAVA! :P
 
 ```bash
 export PASS=changeit
-export DOMAIN=ui.ac.id
+export DOMAIN=example.org
 ```
 
 I'm too lazy, just streamlined it all. :P
