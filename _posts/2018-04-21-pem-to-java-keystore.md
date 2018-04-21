@@ -14,6 +14,7 @@ header:
   overlay_image: /assets/2018/04/java2.png
 excerpt: PEM to Java Keystore
 ---
+
 Normally, we used PKCS12 PEM for NGINX, Apache2, OpenLDAP, postfix, etc.
 
 BUT NOT JAVA! :P
