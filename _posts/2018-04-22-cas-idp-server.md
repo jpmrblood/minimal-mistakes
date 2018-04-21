@@ -71,8 +71,37 @@ keytool -genkey -keystore $CAS_SRC_DIR/$DOMAIN_NAME.keystore -alias $DOMAIN_NAME
 
 #  Compilation
 
+Just to make sure, we are in the project's root directory:
+```bash
+cd $CAS_SRC_DIR
+```
+
 Change Tomcat to Jetty
 
 ```bash
 sed -i "s/tomcat/jetty/" cas/build.gradle
 ```
+
+Setup basic configuration.
+
+```bash
+cat > etc/config/cas.properties << EOF
+# server.port = 8443
+cas.server.name: https://$DOMAIN_NAME:8443
+cas.server.prefix: https://$DOMAIN_NAME:8443/cas
+
+cas.adminPagesSecurity.ip=127\.0\.0\.1
+
+logging.config: file:/etc/cas/config/log4j2.xml
+# cas.serviceRegistry.config.location: classpath:/services
+
+# SSL
+server.ssl.enabled=true
+
+server.ssl.keyStore=file:/etc/cas/$DOMAIN_NAME.keystore
+server.ssl.keyStorePassword=$KEYSTORE_PASS
+server.ssl.keyPassword=$KEYSTORE_PASS
+EOF
+
+```
+> Yeah, I just borrowed the lines from original cas.properties, change the domain name and add keystore for SSL connection.
