@@ -12,12 +12,26 @@ header:
   overlay_filter: "0.5"
   overlay_color: "#000"
   overlay_image: /assets/2018/04/java2.png
-excerpt: Installing Oracle Java 10 JDK on Debian Stretch
+excerpt: PEM to Java Keystore
 ---
+Normally, we used PKCS12 PEM for NGINX, Apache2, OpenLDAP, postfix, etc.
 
+BUT NOT JAVA! :P
+
+# Conventions
 
 ```bash
-openssl pkcs12 -export -in ui.ac.id.crt -inkey ui.ac.id.key -out thekeystore -name cas -certfile ui.ac.id.crt
+export PASS=changeit
+export DOMAIN=ui.ac.id
+```
+
+I'm too lazy, just streamlined it all. :P
+
+# Import
+
+```bash
+openssl pkcs12 -export -in $DOMAIN.crt -inkey $DOMAIN.key -out $DOMAIN.p12 -name $DOMAIN -passout pass:$PASS
+keytool -importkeystore -deststorepass $PASS -destkeypass $PASS -destkeystore $DOMAIN.keystore -srckeystore $DOMAIN.p12 -srcstoretype PKCS12 -srcstorepass $PASS -alias $DOMAIN
 ```
 
 # Note
@@ -29,4 +43,5 @@ But, hey, every Java thing still only able to load keystore, not PKCS12.
 
 # Reference
 
-[]""
+[Mengubah Format PEM (Apache/NGINX) ke Keystore JAVA](https://staff.blog.ui.ac.id/jp/2015/10/23/mengubah-format-pem-apachenginx-ke-keystore-java/)
+[Chapter 6. Configuring Jetty Connectors: Configuring SSL/TLS](http://www.eclipse.org/jetty/documentation/current/configuring-ssl.html)
