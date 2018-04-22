@@ -69,19 +69,27 @@ keytool -importkeystore -deststorepass $KEYSTORE_PASS -destkeypass $KEYSTORE_PAS
 keytool -genkey -keystore $CAS_SRC_DIR/$DOMAIN_NAME.keystore -alias $DOMAIN_NAME -keyalg RSA -keysize 4096 -validity 720
 ```
 
-#  Compilation
+#  Installation
 
 Just to make sure, we are in the project's root directory:
 ```bash
 cd $CAS_SRC_DIR
 ```
 
+## Compilation
 Change Tomcat to Jetty
 
 ```bash
 sed -i "s/tomcat/jetty/" cas/build.gradle
 ```
 
+Now compile:
+```bash
+./build clean build
+```
+
+
+## Setup
 Setup basic configuration.
 
 ```bash
@@ -105,3 +113,42 @@ EOF
 
 ```
 > Yeah, I just borrowed the lines from original cas.properties, change the domain name and add keystore for SSL connection.
+
+## Install
+
+Make configuration directory:
+
+```bash
+sudo mkdir /etc/cas
+sudo chown `whoami`:`whoami` /etc/cas
+```
+
+In production, we should create a CAS user login for the job. But for now, just use our own login.
+
+
+Copy the configurations:
+
+```bash
+./build copy
+```
+
+
+# Run the CAS APP.
+
+```bash
+./build run
+```
+
+Open your browser, the default user is `casuser` and the password is `Mellon`. Remember, we haven't provide any *REAL* identity authentication. This is still for development, not yet production.
+
+![CAS default login](assets/2018/04/cas_default_login.png)
+
+
+# TODO
+
+ - Create CAS user login.
+ - Create personalized login page.
+ - Create systemd unit.
+ - Setup authentication provider. Usually, LDAP or DB. But, I see we could make our own RESTful service as an authentication provider. Neat!
+ - Create proper configuration. This is not so FHS!
+ - Install package instead of messing with source code.
