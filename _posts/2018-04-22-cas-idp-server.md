@@ -141,7 +141,7 @@ Copy the configurations:
 
 Open your browser, the default user is `casuser` and the password is `Mellon`. Remember, we haven't provide any *REAL* identity authentication. This is still for development, not yet production.
 
-![CAS default login](assets/2018/04/cas_default_login.png)
+![CAS default login](/assets/2018/04/cas_default_login.png)
 
 
 # TODO
