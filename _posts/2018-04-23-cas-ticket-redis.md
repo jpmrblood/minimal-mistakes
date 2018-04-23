@@ -24,29 +24,40 @@ export CAS_SRC_DIR=`pwd` # somewhere
 Yes, I assume we are on root directory of our CAS Gradle overlay.
 
 # Setup Redis Server
+
 ```bash
 sudo apt install redis-server
 ```
 
 Disable bind to localhost only: (default Debian Stretch install)
+
 ```bash
 sudo sed -i 's/^bind/#bind/'
 ```
 
 Add Redis access password:
+
 ```bash
 echo "requirepass $REDIS_PASSWORD" | sudo tee -a /etc/redis/redis.conf
 ```
 
 Restart Redis:
+
 ```bash
 sudo /etc/init.d/redis-server restart
 ```
 
 # Setup CAS Dependency
 Add to cas' build.gradle CAS Redis dependency.
-`$CAS_SRC_DIR/cas/build.gradle`:
-```ini
+
+```gradle
+compile "org.apereo.cas:cas-server-support-redis-ticket-registry:${project.'cas.version'}"
+```
+
+
+So, file becomes `$CAS_SRC_DIR/cas/build.gradle`:
+
+```gradle
 // ...
 dependencies {
     compile "org.apereo.cas:cas-server-webapp-jetty:${project.'cas.version'}@war"
@@ -61,7 +72,9 @@ dependencies {
 ```
 
 # Setup CAS configuration
-Add to CAS configuration:
+
+Append to CAS configuration:
+
 ```bash
 cat >> etc/cas/config/cas.properties << EOF
 # Ticket granting
@@ -76,3 +89,5 @@ cas.ticket.registry.redis.password=$REDIS_PASSWORD
 
 EOF
 ```
+
+You could restart CAS, but CAS have an ability to read configuration change on-the-fly.
