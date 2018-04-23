@@ -87,3 +87,8 @@ casigdb=> \dt
 (5 rows)
 
 ```
+
+# References
+
+[JDBC Drivers, PostgreSQL](https://apereo.github.io/cas/5.2.x/installation/JDBC-Drivers.html#postgresql)
+[Configuration Properties, Database Service Registry](https://apereo.github.io/cas/5.2.x/installation/Configuration-Properties.html#database-service-registry)
