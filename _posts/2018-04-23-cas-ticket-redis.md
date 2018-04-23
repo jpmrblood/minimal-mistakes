@@ -116,6 +116,21 @@ Or
 java -jar cas/build/libs/cas.war
 ```
 
-Reference:
+## Test
+
+If doing it right
+
+```bash
+redis-cli 
+127.0.0.1:6379> AUTH nee8oohiNg3WiWoetapha3iwae9giej3
+OK
+127.0.0.1:6379> CLIENT LIST
+id=86 addr=192.0.2.11:52512 fd=6 name= age=56 idle=29 flags=N db=0 sub=0 psub=0 multi=-1 qbuf=0 qbuf-free=0 obl=0 oll=0 omem=0 events=r cmd=ping
+id=87 addr=127.0.0.1:56782 fd=7 name= age=5 idle=0 flags=N db=0 sub=0 psub=0 multi=-1 qbuf=0 qbuf-free=32768 obl=0 oll=0 omem=0 events=r cmd=client
+
+```
+
+# Reference
+
 [Redis Ticket Registry](https://apereo.github.io/cas/5.2.x/installation/Redis-Ticket-Registry.html)
 [CAS Properties: Redis Ticket Registry](https://apereo.github.io/cas/5.2.x/installation/Configuration-Properties.html#redis-ticket-registry)

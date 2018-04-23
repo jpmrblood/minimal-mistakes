@@ -1,5 +1,5 @@
 ---
-title: Install CAS IdP server
+title: Create NIC in VMBOX
 tags:
   - nic
   - guest
