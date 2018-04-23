@@ -73,6 +73,15 @@ cas.serviceRegistry.jpa.dialect=org.hibernate.dialect.PostgreSQL95Dialect
 
 Don't forget the dialect or later we would not have DDL.
 
+## Default services
+
+This would install default service for HTTPS/IMAPS
+
+```sql
+insert into regexregisteredservice (id, name, serviceid, evaluation_order)
+  values (1, 'Generic HTTPS and IMAPS', '^(https?|imaps?|http?)://.*', 0);
+```  
+
 ## Test
 
 ```
