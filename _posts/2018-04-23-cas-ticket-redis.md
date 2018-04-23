@@ -1,0 +1,78 @@
+---
+title: CAS Redis Ticket Storage
+tags:
+  - java
+  - cas
+  - idp
+categories:
+  - notes
+header:
+  overlay_filter: "0.5"
+  overlay_color: "#000"
+  overlay_image: /assets/2018/04/java2.png
+excerpt: CAS Redis Ticket Storage
+---
+
+# Conventions
+
+```bash
+export REDIS_PASSWORD=`pwgen 32 1`
+export REDIS_SERVER=192.0.2.10
+export CAS_SRC_DIR=`pwd` # somewhere
+```
+
+Yes, I assume we are on root directory of our CAS Gradle overlay.
+
+# Setup Redis Server
+```bash
+sudo apt install redis-server
+```
+
+Disable bind to localhost only: (default Debian Stretch install)
+```bash
+sudo sed -i 's/^bind/#bind/'
+```
+
+Add Redis access password:
+```bash
+echo "requirepass $REDIS_PASSWORD" | sudo tee -a /etc/redis/redis.conf
+```
+
+Restart Redis:
+```bash
+sudo /etc/init.d/redis-server restart
+```
+
+# Setup CAS Dependency
+Add to cas' build.gradle CAS Redis dependency.
+`$CAS_SRC_DIR/cas/build.gradle`:
+```ini
+// ...
+dependencies {
+    compile "org.apereo.cas:cas-server-webapp-jetty:${project.'cas.version'}@war"
+    compile "org.apereo.cas:cas-server-support-redis-ticket-registry:${project.'cas.version'}"
+    if (!project.hasProperty('bootiful')) {
+        // Other dependencies may be listed here...
+    } else {
+        println "Running CAS in Bootiful mode; all dependencies except the CAS web application are ignored."
+    }
+}
+// ...
+```
+
+# Setup CAS configuration
+Add to CAS configuration:
+```bash
+cat >> etc/cas/config/cas.properties << EOF
+# Ticket granting
+cas.tgc.crypto.encryption.key=wSQUZVGqXGzJJZYa89654xIf_U8mSughk8f9tlo6Zts
+cas.tgc.crypto.signing.key=GmARoc8Ej2WnAhjAUadaNhjCKpif60M8MqfL-q4IymQo1KyutBulZGi_FB3ZZHieTi27ButDEtBB8wFxfvuGLA
+
+# REDIS Ticket
+cas.ticket.registry.redis.host=$REDIS_SERVER
+cas.ticket.registry.redis.database=0
+cas.ticket.registry.redis.port=6379
+cas.ticket.registry.redis.password=$REDIS_PASSWORD
+
+EOF
+```
