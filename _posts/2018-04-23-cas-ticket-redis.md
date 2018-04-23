@@ -71,6 +71,12 @@ dependencies {
 // ...
 ```
 
+Rebuild CAS:
+
+```bash
+./build clean build
+```
+
 # Setup CAS configuration
 
 Append to CAS configuration:
@@ -88,6 +94,12 @@ cas.ticket.registry.redis.port=6379
 cas.ticket.registry.redis.password=$REDIS_PASSWORD
 
 EOF
+```
+
+Move to CAS configuration directory:
+
+```bash
+./build copy
 ```
 
 You could restart CAS, but CAS have an ability to read configuration change on-the-fly.
