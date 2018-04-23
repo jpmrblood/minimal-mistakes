@@ -59,7 +59,6 @@ Convert PEM to keystore/
 
 ```bash
 openssl pkcs12 -export -in $PEM_DIR/$DOMAIN_NAME.crt -inkey $PEM_DIR/$DOMAIN_NAME.key -out $PEM_DIR/$DOMAIN_NAME.p12 -name $DOMAIN_NAME -passout pass:$KEYSTORE_PASS
-
 keytool -importkeystore -deststorepass $KEYSTORE_PASS -destkeypass $KEYSTORE_PASS -destkeystore $CAS_SRC_DIR/etc/cas/$DOMAIN_NAME.keystore -srckeystore $PEM_DIR/$DOMAIN_NAME.p12 -srcstoretype PKCS12 -srcstorepass $KEYSTORE_PASS -alias $DOMAIN_NAME
 ```
 
