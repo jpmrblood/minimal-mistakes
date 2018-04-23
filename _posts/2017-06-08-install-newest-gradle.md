@@ -7,7 +7,7 @@ categories:
   - java
 header:
   overlay_filter: "0.5"
-  overlay_color: "#000"
+  overlay_color: "#74b9ff"
   teaser: /assets/2018/04/gradle.png
   overlay_image: /assets/2018/04/gradle.png
 ---
