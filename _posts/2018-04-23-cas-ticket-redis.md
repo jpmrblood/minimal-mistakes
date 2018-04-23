@@ -103,3 +103,15 @@ Move to CAS configuration directory:
 ```
 
 You could restart CAS, but CAS have an ability to read configuration change on-the-fly.
+
+Run CAS if it isn't run:
+
+```bash
+./build run
+```
+
+Or
+
+```bash
+java -jar cas/build/libs/cas.war
+```
