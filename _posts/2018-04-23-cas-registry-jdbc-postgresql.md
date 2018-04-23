@@ -1,5 +1,5 @@
 ---
-title: CAS Redis Ticket Storage
+title: CAS Service Registry with PostgreSQL Backend
 tags:
   - java
   - cas
@@ -11,7 +11,7 @@ header:
   overlay_color: "#000"
   teaser: /assets/2018/04/java2.png
   overlay_image: /assets/2018/04/java2.png
-excerpt: CAS Redis Ticket Storage
+excerpt: Building CAS Service Registry with PostgreSQL JDBC backend
 ---
 
 # Conventions

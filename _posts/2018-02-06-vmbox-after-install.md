@@ -16,6 +16,11 @@ excerpt: VirtualBox on a new machine from clone.
 After cloning a VM template, we need to change things to make us stay out of trouble.
 
 SSH to the machine and do these things.
+# Conventions
+
+```bash
+export NEW_HOSTNAME='newhost0'
+```
 
 # Machine ID
 
@@ -32,6 +37,6 @@ sudo ln -s /etc/machine-id /var/lib/dbus/
 # Hostname
 
 ```bash
-echo "127.0.0.1 newhost0" | sudo tee -a /etc/hosts
-sudo hostnamectl set-hostname newhost0
+echo "127.0.0.1 $NEW_HOSTNAME" | sudo tee -a /etc/hosts
+sudo hostnamectl set-hostname $NEW_HOSTNAME
 ```
