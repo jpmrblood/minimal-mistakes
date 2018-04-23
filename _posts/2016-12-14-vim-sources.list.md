@@ -7,6 +7,7 @@ tags:
 categories:
   - tips
 header:
+  teaser: /assets/2016/12/vim.png
   overlay_image: /assets/2016/12/vim.png
 ---
 

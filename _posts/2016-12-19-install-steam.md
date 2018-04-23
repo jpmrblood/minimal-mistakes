@@ -9,6 +9,7 @@ categories:
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
+  teaser: /assets/2016/12/steam.jpg
   overlay_image: /assets/2016/12/steam.jpg
 excerpt: "Instaling Steam with better gaming experience."
 ---

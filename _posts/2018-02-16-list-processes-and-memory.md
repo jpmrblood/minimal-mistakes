@@ -9,6 +9,7 @@ categories:
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
+  teaser: /assets/the-most-terrifying.png
   overlay_image: /assets/the-most-terrifying.png
 excerpt: How to list processes based on its memory consumption.
 ---

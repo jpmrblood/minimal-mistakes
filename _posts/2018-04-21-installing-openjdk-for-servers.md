@@ -10,6 +10,7 @@ categories:
 header:
   overlay_filter: "0.5"
   overlay_color: "#000"
+  teaser: /assets/2018/04/java2.png
   overlay_image: /assets/2018/04/java2.png
 excerpt: Installing OpenJDK for Servers
 ---

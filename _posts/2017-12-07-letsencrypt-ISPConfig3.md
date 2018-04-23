@@ -12,6 +12,7 @@ categories:
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
+  teaser: /assets/2017/01/http-cors.png
   overlay_image: /assets/2017/01/http-cors.png
 excerpt: How to get Let's Encrypt SSL in ISPConfig3
 ---

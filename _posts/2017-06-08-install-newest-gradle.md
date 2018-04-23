@@ -5,6 +5,11 @@ tags:
   - java
 categories:
   - java
+header:
+  overlay_filter: "0.5"
+  overlay_color: "#000"
+  teaser: /assets/2018/04/gradle.png
+  overlay_image: /assets/2018/04/gradle.png
 ---
 Debian and many OSes may have old Gradle. We need the newest Gradle.
 

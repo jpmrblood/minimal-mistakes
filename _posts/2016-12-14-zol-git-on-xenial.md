@@ -13,6 +13,7 @@ categories:
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
+  teaser: /assets/ZoL.png
   overlay_image: /assets/ZoL.png
 ---
 

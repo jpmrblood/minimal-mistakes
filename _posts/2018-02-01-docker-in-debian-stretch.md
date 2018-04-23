@@ -9,6 +9,7 @@ categories:
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
+  teaser: /assets/2018/02/docker.png
   overlay_image: /assets/2018/02/docker.png
 excerpt: Install Docker in Debian Stretch
 ---

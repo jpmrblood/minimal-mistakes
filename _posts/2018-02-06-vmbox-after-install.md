@@ -8,6 +8,7 @@ categories:
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
+  teaser: /assets/the-most-terrifying.png
   overlay_image: /assets/the-most-terrifying.png
 excerpt: VirtualBox on a new machine from clone.
 ---

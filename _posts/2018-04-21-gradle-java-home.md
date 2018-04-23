@@ -1,5 +1,5 @@
 ---
-title: Install Newest Gradle
+title: Gradle Select Java Version
 tags:
   - gradle
   - java
@@ -9,7 +9,8 @@ categories:
 header:
   overlay_filter: "0.5"
   overlay_color: "#000"
-  overlay_image: /assets/2018/04/java2.png
+  teaser: /assets/2018/04/gradle.png
+  overlay_image: /assets/2018/04/gradle.png
 ---
 
 Sometimes we need so many version of Java.

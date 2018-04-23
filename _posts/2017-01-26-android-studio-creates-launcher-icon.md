@@ -11,6 +11,7 @@ categories:
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
+  teaser: /assets/2017/02/android-recharged.png
   overlay_image: /assets/2017/02/android-recharged.png
 excerpt: The title explains all.
 ---

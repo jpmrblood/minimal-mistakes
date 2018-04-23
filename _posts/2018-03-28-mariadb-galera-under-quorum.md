@@ -6,6 +6,11 @@ tags:
   - debian
 categories:
   - database
+header:
+  overlay_filter: "0.5"
+  overlay_color: "#000"
+  teaser: /assets/2018/04/database.png
+  overlay_image: /assets/2018/04/database.png
 ---
 WSREP will block mysql clients when the sum of nodes below quorum.
 

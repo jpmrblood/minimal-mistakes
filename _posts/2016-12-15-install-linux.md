@@ -3,6 +3,7 @@ title: Install GNU/Linux
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
+  teaser: /assets/willy-broken-the-windows.png
   overlay_image: /assets/willy-broken-the-windows.png
 tags:
   - linux

@@ -8,6 +8,7 @@ categories:
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
+  teaser: /assets/admin-talk-300x160.jpg
   overlay_image: /assets/admin-talk-300x160.jpg
 excerpt: Warning about untrusted TLS connection when Postfix tries to connect to a server via secure channel.
 ---
