@@ -5,7 +5,7 @@ tags:
   - cas
   - idp
 categories:
-  - notes
+  - cas
 header:
   overlay_filter: "0.5"
   overlay_color: "#000"
@@ -121,7 +121,7 @@ java -jar cas/build/libs/cas.war
 If doing it right
 
 ```bash
-redis-cli 
+redis-cli
 127.0.0.1:6379> AUTH nee8oohiNg3WiWoetapha3iwae9giej3
 OK
 127.0.0.1:6379> CLIENT LIST

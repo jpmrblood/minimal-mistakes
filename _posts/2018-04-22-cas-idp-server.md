@@ -5,7 +5,7 @@ tags:
   - cas
   - idp
 categories:
-  - notes
+  - cas
 header:
   overlay_filter: "0.5"
   overlay_color: "#000"
