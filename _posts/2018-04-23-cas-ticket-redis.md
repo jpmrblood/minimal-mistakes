@@ -115,3 +115,7 @@ Or
 ```bash
 java -jar cas/build/libs/cas.war
 ```
+
+Reference:
+[Redis Ticket Registry](https://apereo.github.io/cas/5.2.x/installation/Redis-Ticket-Registry.html)
+[CAS Properties: Redis Ticket Registry](https://apereo.github.io/cas/5.2.x/installation/Configuration-Properties.html#redis-ticket-registry)
