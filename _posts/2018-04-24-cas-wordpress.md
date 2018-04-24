@@ -142,7 +142,8 @@ After installing WP Cassify, go to `Options` &rarr; `WP Cassify`. Select:
 
 |CAS Server base url:| https://example.org:8443/cas|
 |Create user if not exist:| (x)|
-|Push defaults roles to connected user: | tes|
+
+Map a user or group to Administrator role.
 
 | Push defaults roles to connected user | Administrator |
 | | `(CAS{cas_user_id} -EQ "casuser")` |
