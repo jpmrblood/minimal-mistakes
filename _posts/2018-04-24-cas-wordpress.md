@@ -9,7 +9,7 @@ categories:
 header:
   overlay_filter: "0.5"
   overlay_color: "#000"
-  teaser: /assets/the-most-terrifying.png
+  teaser: /assets/2018/04/java2.png
   overlay_image: /assets/2018/04/java2.png
 excerpt: CAS Case Study, Wordpress
 ---
