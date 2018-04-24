@@ -75,7 +75,9 @@ Don't forget the dialect or later we would not have DDL.
 
 ## Default services
 
-This would install default service for HTTPS/IMAPS
+This would install default service for HTTPS/IMAPS. It should be automatically
+installed by CAS on the first run. But, hey, may be something goes wrong and we
+need to make our own service.
 
 ```sql
 insert into regexregisteredservice (id, name, serviceid, evaluation_order)
@@ -86,15 +88,16 @@ insert into regexregisteredservice (id, name, serviceid, evaluation_order)
 
 ```
 casigdb=> \dt
-                    List of relations
- Schema |              Name              | Type  | Owner
---------+--------------------------------+-------+-------
- public | regexregisteredservice         | table | casig
- public | regexregisteredserviceproperty | table | casig
- public | registeredservice_contacts     | table | casig
- public | registeredserviceimpl_props    | table | casig
- public | registeredserviceimplcontact   | table | casig
-(5 rows)
+                          List of relations
+ Schema |                    Name                    | Type  | Owner
+--------+--------------------------------------------+-------+-------
+ public | regexregisteredservice                     | table | casig
+ public | regexregisteredserviceproperty             | table | casig
+ public | registeredservice_contacts                 | table | casig
+ public | registeredserviceimpl_props                | table | casig
+ public | registeredserviceimplcontact               | table | casig
+ public | samlregisteredservice_attributenameformats | table | casig
+(6 rows)
 
 ```
 
