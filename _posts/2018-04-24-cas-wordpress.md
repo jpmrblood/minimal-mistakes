@@ -65,7 +65,7 @@ the same as the VirtualBox port forwarding.
 The SSL config is `snakeoil-ui`, a `snakeoil` snippet changed to use my own valid SSL
 certs. As I said, no surprise!
 
-```lua
+```nginx
 server {
         listen 10443 ssl default_server;
         listen [::]:10443 ssl default_server;
