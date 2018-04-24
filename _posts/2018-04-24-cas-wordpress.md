@@ -1,18 +1,17 @@
 ---
-title: CAS Case Study: Wordpress
+title: CAS Case Study, Wordpress
 tags:
   - cas
   - wordpress
   - sso
 categories:
   - cas
-toc: true
 header:
   overlay_filter: "0.5"
   overlay_color: "#000"
   teaser: /assets/the-most-terrifying.png
-  overlay_image: /assets/the-most-terrifying.png
-excerpt: CAS Case Study: Wordpress
+  overlay_image: /assets/2018/04/java2.png
+excerpt: CAS Case Study, Wordpress
 ---
 
 # Conventions
