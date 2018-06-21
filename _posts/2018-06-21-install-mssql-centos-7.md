@@ -45,3 +45,7 @@ sudo firewall-cmd --reload
 ```
 
 Done.
+
+# SOURCE
+
+* [Quickstart: Install SQL Server and create a database on Red Hat](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-red-hat?view=sql-server-linux-2017)
