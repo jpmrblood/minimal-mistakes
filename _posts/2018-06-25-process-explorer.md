@@ -17,7 +17,6 @@ To have Process Explorer, a more robust process utility for Windows is a bliss.
 
 ![Process Explorer](/assets/2018/06/process-explorer.png)
 
-
 # SOURCE
 
 * [Process Explorer v16.21](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer)
