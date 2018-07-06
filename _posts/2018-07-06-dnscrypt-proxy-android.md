@@ -34,7 +34,9 @@ Add new DNS profile with 127.0.0.1 as the DNS 1 and let DNS 2 empty.
 
 # Voila!
 
-![IP Leak shows my real IP](assets/2018/07/ipleaks-dnscrypt.png)
+Now IPLeak shows my real IP.
+
+![IP Leak shows my real IP](/assets/2018/07/ipleaks-dnscrypt.png)
 
 # Source 
 
