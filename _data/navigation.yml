@@ -5,7 +5,7 @@ main:
   - title: "Slides"
     url: /slides/
   - title: "Opinions"
-    url: /minds/
+    url: https://jpmrblood.netlify.com/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
