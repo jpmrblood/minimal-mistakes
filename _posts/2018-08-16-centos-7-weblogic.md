@@ -15,10 +15,10 @@ excerpt: Installing Weblogic in CentOS 7 Network Install.
 ---
 I'm doing install on CentOS 7 network install with these configurations:
 - Software Selection:
--- Minimal Installation
--- Debugging Tools
--- Compability Libraries
--- System Administration Tools
+  - Minimal Installation
+  - Debugging Tools
+  - Compability Libraries
+  - System Administration Tools
 - Security policy: 
--- Common Profile for General-Purpose Systems
+  - Common Profile for General-Purpose Systems
 
