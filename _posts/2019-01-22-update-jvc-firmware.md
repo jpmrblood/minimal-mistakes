@@ -23,7 +23,7 @@ Turn on the engine before updating. This to ensure electricity.
 Format USB to FAT32 first before.
 
 To get the update:
-* Go to http://www.jvc.net/cs/car/firmware/2018/kwv640bt/
+* Go to [http://www.jvc.net/cs/car/firmware/2018/kwv640bt/](http://www.jvc.net/cs/car/firmware/2018/kwv640bt/)
 * Click on *Agree* so that we could download the firmware
 * Download *Model 2* [File "S_V1_1_1421_1100.zip" download (265 MB)](http://www.jvc.net/cs/car/firmware/2018/kwv640bt/software/S_V1_1_1421_1100.zip) 
 * Unzip the folder to USB drive
