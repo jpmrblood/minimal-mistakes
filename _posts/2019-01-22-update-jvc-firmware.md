@@ -6,10 +6,8 @@ tags:
 categories:
   - ertiga
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  teaser: /assets/the-most-terrifying.png
-  overlay_image: /assets/the-most-terrifying.png
+  teaser: /assets/2019/01/image1.jpg
+  overlay_image: /assets/2019/01/image1.jpg
 excerpt: Update JVC KW-M540BT
 ---
 WARNING: after update, the Suzuki logo replaced by default JVC logo.
