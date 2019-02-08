@@ -41,12 +41,14 @@ docker run --name glpi --hostname glpi --link mysql-glpi:mariadb --volumes-from 
 # Installation Wizard
 
 Installation Wizard are based on docs:
-[https://glpi-install.readthedocs.io/en/latest/install/wizard.html] (https://glpi-install.readthedocs.io/en/latest/install/wizard.html)
+[https://glpi-install.readthedocs.io/en/latest/install/wizard.html](https://glpi-install.readthedocs.io/en/latest/install/wizard.html)
 
 Everything is just click next. But, the highlighted one is at the DB:
+
+```
 SQL Server: MariaDB
 SQL User: root
 SQL Password: $MARIADB_PWD
-----
+```
 
 done.
