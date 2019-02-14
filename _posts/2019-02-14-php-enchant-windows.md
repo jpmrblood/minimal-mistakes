@@ -32,7 +32,7 @@ extension=enchant
 Create dir:
 `C:\php-7.2\share\myspell\dicts`
 
-Put en_US.aff and en_US.dic to there. You could search them on the Internet or pull it from Debian source file for Libreoffice Dictionaries package (about 46MB).
+Put `en_US.aff` and `en_US.dic` to there. You could search them on the Internet or pull it from Debian source file for Libreoffice Dictionaries package (about 46MB).
 
 ## Check if okay
 
