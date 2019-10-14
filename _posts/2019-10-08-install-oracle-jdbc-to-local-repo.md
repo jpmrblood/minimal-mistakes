@@ -24,3 +24,14 @@ mvnw install:install-file -Dfile=ojdbc8.jar -DgroupId=com.oracle -DartifactId=oj
 ```
 
 Change ojdbc8.jar location for custom path.
+
+# Maven Entry
+
+```xml
+<dependency>
+  <groupId>com.oracle</groupId>
+  <artifactId>ojdbc8</artifactId>
+  <version>12.2.0.1</version>
+	<scope>runtime</scope>
+</dependency>
+```
