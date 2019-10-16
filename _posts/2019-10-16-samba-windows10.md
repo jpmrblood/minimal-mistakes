@@ -46,3 +46,6 @@ The command completed successfully.
 
 Just put random password there.
 
+Source:
+* [Guest access in SMB2 disabled by default in Windows](https://support.microsoft.com/en-us/help/4046019/guest-access-in-smb2-disabled-by-default-in-windows-10-and-windows-ser)
+
