@@ -27,7 +27,7 @@ You can't access this shared folder because your organization's security policie
 
 Configure in Regedit.exe:
 
-```reg
+```ini
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
 "AllowInsecureGuestAuth"
 ```
