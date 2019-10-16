@@ -31,6 +31,7 @@ Configure in Regedit.exe:
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
 "AllowInsecureGuestAuth"
 ```
+
 from `dword(0)` to `dword(1)`.
 
 Thus:
