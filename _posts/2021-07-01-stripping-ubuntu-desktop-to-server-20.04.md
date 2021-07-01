@@ -15,6 +15,6 @@ excerpt: How to remove packages and stripping Ubuntu Desktop
 Remove all the desktop:
 
 ```bash
-sudo apt -y remove --purge ubuntu-desktop ubuntu-desktop-minimal gdm3
+sudo apt -y remove --purge ubuntu-desktop ubuntu-desktop-minimal gdm3 pulseaudio
 sudo apt -y autoremove --purge
 ```
